@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "aprende-jugando.sln"
+    "dotnet.defaultSolution": "proyecto-aprende-jugando.sln"
 }
