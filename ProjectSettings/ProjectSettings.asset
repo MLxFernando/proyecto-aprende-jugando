@@ -70,7 +70,7 @@ PlayerSettings:
   androidRenderOutsideSafeArea: 1
   androidUseSwappy: 1
   androidBlitType: 0
-  androidResizableWindow: 0
+  androidResizableWindow: 1
   androidDefaultWindowWidth: 1920
   androidDefaultWindowHeight: 1080
   androidMinimumWindowWidth: 400
@@ -161,6 +161,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.fernando
     Standalone: com.DefaultCompany.2DProject
   buildNumber:
     Standalone: 0
@@ -287,7 +288,9 @@ PlayerSettings:
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: Android
     m_Icons:
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 2800000, guid: a6a17da2d3eb77d4cb58c5b7b6dcf2a4, type: 3}
+      - {fileID: 2800000, guid: 6288c6400fda9e5468d5dbffd8178932, type: 3}
       m_Width: 432
       m_Height: 432
       m_Kind: 2
