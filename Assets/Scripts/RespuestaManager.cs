@@ -27,12 +27,11 @@ public class RespuestaManager : MonoBehaviour
     {
         if (indiceSeleccionado == indiceCorrecto)
         {
-            Debug.Log("¡Correcto!");
+
             audioSource.PlayOneShot(sonidoCorrecto);
         }
         else
         {
-            Debug.Log("¡Incorrecto!");
             audioSource.PlayOneShot(sonidoError);
         }
     }
