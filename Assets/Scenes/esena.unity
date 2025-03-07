@@ -226,7 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 22642648}
   sonidoCorrecto: {fileID: 8300000, guid: fc9ceac50ffb3754888bce12730c71d3, type: 3}
-  sonidoError: {fileID: 8300000, guid: a55af22c94e5da44eaec0e29bec36d06, type: 3}
+  sonidoError: {fileID: 8300000, guid: 8b0c23018d2f0f5448b3a3d641242b00, type: 3}
   botones:
   - {fileID: 1665580947}
   - {fileID: 1972567222}
@@ -2897,7 +2897,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Presiona un color
+  m_text: "Presiona un n\xFAmero"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6558,7 +6558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 652865607}
   sonidoCorrecto: {fileID: 8300000, guid: fc9ceac50ffb3754888bce12730c71d3, type: 3}
-  sonidoError: {fileID: 8300000, guid: a55af22c94e5da44eaec0e29bec36d06, type: 3}
+  sonidoError: {fileID: 8300000, guid: 8b0c23018d2f0f5448b3a3d641242b00, type: 3}
   botones:
   - {fileID: 111900866}
   - {fileID: 1971333306}
@@ -8658,7 +8658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 824963785}
   sonidoCorrecto: {fileID: 8300000, guid: fc9ceac50ffb3754888bce12730c71d3, type: 3}
-  sonidoError: {fileID: 8300000, guid: a55af22c94e5da44eaec0e29bec36d06, type: 3}
+  sonidoError: {fileID: 8300000, guid: 8b0c23018d2f0f5448b3a3d641242b00, type: 3}
   botones:
   - {fileID: 1474889627}
   - {fileID: 176453285}
@@ -11500,7 +11500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1068953597}
   sonidoCorrecto: {fileID: 8300000, guid: fc9ceac50ffb3754888bce12730c71d3, type: 3}
-  sonidoError: {fileID: 8300000, guid: a55af22c94e5da44eaec0e29bec36d06, type: 3}
+  sonidoError: {fileID: 8300000, guid: 8b0c23018d2f0f5448b3a3d641242b00, type: 3}
   botones:
   - {fileID: 693454431}
   - {fileID: 254058161}
@@ -12883,7 +12883,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1125894086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15477,7 +15477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1314378112}
   sonidoCorrecto: {fileID: 8300000, guid: fc9ceac50ffb3754888bce12730c71d3, type: 3}
-  sonidoError: {fileID: 8300000, guid: a55af22c94e5da44eaec0e29bec36d06, type: 3}
+  sonidoError: {fileID: 8300000, guid: 8b0c23018d2f0f5448b3a3d641242b00, type: 3}
   botones:
   - {fileID: 1773218807}
   - {fileID: 1128254239}
@@ -19243,7 +19243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1625572143
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19535,7 +19535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1633056018}
   sonidoCorrecto: {fileID: 8300000, guid: fc9ceac50ffb3754888bce12730c71d3, type: 3}
-  sonidoError: {fileID: 8300000, guid: a55af22c94e5da44eaec0e29bec36d06, type: 3}
+  sonidoError: {fileID: 8300000, guid: 8b0c23018d2f0f5448b3a3d641242b00, type: 3}
   botones:
   - {fileID: 1628500691}
   - {fileID: 2139263245}
@@ -25752,7 +25752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 2001742740}
   sonidoCorrecto: {fileID: 8300000, guid: fc9ceac50ffb3754888bce12730c71d3, type: 3}
-  sonidoError: {fileID: 8300000, guid: a55af22c94e5da44eaec0e29bec36d06, type: 3}
+  sonidoError: {fileID: 8300000, guid: 8b0c23018d2f0f5448b3a3d641242b00, type: 3}
   botones:
   - {fileID: 1081479765}
   - {fileID: 758082948}
