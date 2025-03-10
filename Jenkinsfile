@@ -1,17 +1,17 @@
 pipeline {
-    agent any  // Jenkins puede correr en cualquier agente
+    agent any 
 
     environment {
-        UNITY_VERSION = "2022.3.10f1"  // Versión de Unity usada
-        UNITY_EXECUTABLE = "/opt/Unity/Hub/Editor/${UNITY_VERSION}/Editor/Unity"  // Ruta de Unity en Linux
-        PROJECT_PATH = "path/del/proyecto"  // Ajusta la ruta
+        UNITY_VERSION = "2022.3.37f1"  // Versión de Unity usada
+        UNITY_EXECUTABLE = "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Unity.exe"
+        PROJECT_PATH = "C:/ProgramData/Jenkins/.jenkins/workspace/Proyecto-CI-CD"
         BUILD_PATH = "Builds/Android"
     }
 
     stages {
         stage('Clonar Código') {
             steps {
-                git branch: 'main', url: 'https://github.com/tu-repo.git'
+                git branch: 'main', url: 'https://github.com/MLxFernando/proyecto-aprende-jugando.git'
             }
         }
 
