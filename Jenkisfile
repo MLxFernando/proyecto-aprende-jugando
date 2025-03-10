@@ -1,0 +1,42 @@
+pipeline {
+    agent any  // Jenkins puede correr en cualquier agente
+
+    environment {
+        UNITY_VERSION = "2022.3.10f1"  // Versión de Unity usada
+        UNITY_EXECUTABLE = "/opt/Unity/Hub/Editor/${UNITY_VERSION}/Editor/Unity"  // Ruta de Unity en Linux
+        PROJECT_PATH = "path/del/proyecto"  // Ajusta la ruta
+        BUILD_PATH = "Builds/Android"
+    }
+
+    stages {
+        stage('Clonar Código') {
+            steps {
+                git branch: 'main', url: 'https://github.com/tu-repo.git'
+            }
+        }
+
+        stage('Compilar Juego') {
+            steps {
+                sh "${UNITY_EXECUTABLE} -batchmode -nographics -quit -projectPath ${PROJECT_PATH} -executeMethod BuildScript.PerformBuild -logFile build.log"
+            }
+        }
+
+        stage('Generar APK') {
+            steps {
+                sh """
+                ${UNITY_EXECUTABLE} -batchmode -nographics -quit -projectPath ${PROJECT_PATH} \
+                -buildTarget Android -executeMethod BuildScript.BuildAndroid -logFile unity.log
+                """
+            }
+        }
+    }
+
+    post {
+        success {
+            echo '✅ Build Exitosa!'
+        }
+        failure {
+            echo '❌ Build Fallida! Revisa los logs en Jenkins.'
+        }
+    }
+}
