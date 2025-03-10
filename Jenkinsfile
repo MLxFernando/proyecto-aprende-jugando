@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         UNITY_VERSION = "2022.3.37f1"  // Versión de Unity usada
-        UNITY_EXECUTABLE = "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Unity.exe"
+        UNITY_EXECUTABLE = "C:/Progra~1/Unity/Hub/Editor/20223~1.37F/Editor/Unity.exe"
         PROJECT_PATH = "C:/ProgramData/Jenkins/.jenkins/workspace/Proyecto-CI-CD"
         BUILD_PATH = "Builds/Android"
     }
