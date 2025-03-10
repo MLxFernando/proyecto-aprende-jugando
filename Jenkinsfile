@@ -17,13 +17,13 @@ pipeline {
 
         stage('Compilar Juego') {
             steps {
-                sh "${UNITY_EXECUTABLE} -batchmode -nographics -quit -projectPath ${PROJECT_PATH} -executeMethod BuildScript.PerformBuild -logFile build.log"
+                bat "${UNITY_EXECUTABLE} -batchmode -nographics -quit -projectPath ${PROJECT_PATH} -executeMethod BuildScript.PerformBuild -logFile build.log"
             }
         }
 
         stage('Generar APK') {
             steps {
-                sh """
+                bat """
                 ${UNITY_EXECUTABLE} -batchmode -nographics -quit -projectPath ${PROJECT_PATH} \
                 -buildTarget Android -executeMethod BuildScript.BuildAndroid -logFile unity.log
                 """
