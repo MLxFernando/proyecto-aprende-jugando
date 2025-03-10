@@ -36,7 +36,7 @@ pipeline {
             echo '✅ Build Exitosa!'
         }
         failure {
-            echo '❌ Build Fallida! Revisa los logs en Jenkins.'
+            echo '❌ Build Fallida!'
         }
     }
 }
