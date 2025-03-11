@@ -23142,11 +23142,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  sonidoNaranja: {fileID: 0}
-  sonidoRojo: {fileID: 0}
-  sonidoVerde: {fileID: 0}
-  sonidoAzul: {fileID: 0}
-  sonidoAmarillo: {fileID: 0}
+  sonidoNaranja: {fileID: 8300000, guid: a7c20d5be7035214db97200745b997b3, type: 3}
+  sonidoRojo: {fileID: 8300000, guid: 9600767022e53484ca5dd6aac19ea82c, type: 3}
+  sonidoVerde: {fileID: 8300000, guid: 4409870a8c28d2348ad0ba218b3f19f3, type: 3}
+  sonidoAzul: {fileID: 8300000, guid: 0fe6613e31cd5bb429ab81d56cb7d191, type: 3}
+  sonidoAmarillo: {fileID: 8300000, guid: 64e2194a51538094290c3c8950026d04, type: 3}
   sonidoMorado: {fileID: 0}
 --- !u!82 &1666921534
 AudioSource:
@@ -30979,18 +30979,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Naranja
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ColorSoundManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2102493294

@@ -4,67 +4,60 @@ using UnityEngine;
 
 public class LevelCompletionManager : MonoBehaviour
 {
-    // Referencia al panel de felicitaciones
-    public GameObject congratulationsPanel;
+    // Panel que se mostrará cuando se completen todos los colores
+    public GameObject panelFinNivelColores;
 
-    // Lista de colores disponibles en el nivel
-    private List<string> availableColors = new List<string>()
-    {
-        "Naranja", "Rojo", "Verde", "Azul", "Amarrillo", "Morado"
-    };
+    // Lista para rastrear qué colores han sido presionados
+    private HashSet<string> coloresPresionados = new HashSet<string>();
 
-    // Conjunto para rastrear los colores ya presionados
-    private HashSet<string> pressedColors = new HashSet<string>();
+    // Lista de todos los colores disponibles
+    private string[] todosLosColores = { "Naranja", "Rojo", "Verde", "Azul", "Amarrillo", "Morado" };
 
     void Start()
     {
-        // Asegurarse de que el panel de felicitaciones esté oculto al inicio
-        congratulationsPanel.SetActive(false);
+        // Asegurarnos de que el panel de finalización está oculto al inicio
+        panelFinNivelColores.SetActive(false);
     }
 
-    // Este método debe ser llamado desde cada botón de color
-    public void ColorPressed(string color)
+    public void RegistrarColorPresionado(string color)
     {
-        // Añadir el color a la lista de presionados
-        pressedColors.Add(color);
+        // Añadir el color a la lista de colores presionados
+        coloresPresionados.Add(color);
 
         // Verificar si todos los colores han sido presionados
-        CheckCompletion();
+        ComprobarTodosColores();
     }
 
-    void CheckCompletion()
+    private void ComprobarTodosColores()
     {
-        // Verificar si todos los colores disponibles han sido presionados
-        bool allPressed = true;
-        foreach (string color in availableColors)
+        bool todosPresionados = true;
+
+        // Verificar cada color
+        foreach (string color in todosLosColores)
         {
-            if (!pressedColors.Contains(color))
+            if (!coloresPresionados.Contains(color))
             {
-                allPressed = false;
+                todosPresionados = false;
                 break;
             }
         }
 
-        // Si todos los colores han sido presionados, mostrar la pantalla de felicitaciones
-        if (allPressed)
+        // Si todos los colores han sido presionados, mostrar el panel
+        if (todosPresionados)
         {
-            ShowCongratulations();
+            MostrarPanelFinalizado();
         }
     }
 
-    void ShowCongratulations()
+    private void MostrarPanelFinalizado()
     {
-        // Mostrar el panel de felicitaciones
-        congratulationsPanel.SetActive(true);
+        panelFinNivelColores.SetActive(true);
     }
 
-    // Método para reiniciar el nivel
-    public void ResetLevel()
+    // Método para reiniciar el nivel (puede ser llamado desde el botón "Aceptar")
+    public void ReiniciarNivel()
     {
-        // Limpiar la lista de colores presionados
-        pressedColors.Clear();
-
-        // Ocultar el panel de felicitaciones
-        congratulationsPanel.SetActive(false);
+        coloresPresionados.Clear();
+        panelFinNivelColores.SetActive(false);
     }
 }
