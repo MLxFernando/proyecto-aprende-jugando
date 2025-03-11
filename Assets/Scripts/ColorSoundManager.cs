@@ -2,27 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class ColorSoundManager : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip sonidoNaranja, sonidoRojo, sonidoVerde, sonidoAzul, sonidoAmarillo, sonidoMorado;
-
     void Start()
     {
         if (audioSource == null)
             audioSource = GetComponent<AudioSource>();
     }
-
     void Update()
     {
-
     }
-
     public void ReproducirSonido(string color)
     {
         AudioClip sonido = null;
-
         switch (color)
         {
             case "Naranja":
@@ -44,7 +38,6 @@ public class ColorSoundManager : MonoBehaviour
                 sonido = sonidoMorado;
                 break;
         }
-
         if (sonido != null && audioSource != null)
         {
             audioSource.PlayOneShot(sonido);
@@ -55,4 +48,3 @@ public class ColorSoundManager : MonoBehaviour
         }
     }
 }
-
