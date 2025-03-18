@@ -34,9 +34,9 @@ Asegúrate de que la versión de Unity sea la correcta.
 Dentro de Unity, selecciona "Play" en la barra superior.
 ¡Listo! Puedes probar el juego y explorar sus funcionalidades.
 ## 📸 Screenshots
-<img src="https://drive.google.com/uc?export=view&id=16JT82fc-YUV5xc1HRRRyyb1Yn5NqVUf7" width="400" height="200"/>
-<img src="https://drive.google.com/uc?export=view&id=1kMPNt_tV4ePVZzhw4vNdDGL3r16_xfG_" width="400"/>
-<img src="https://drive.google.com/uc?export=view&id=1XBVhn-IzsmN16REdjfQwm9vNrUUe-M3-" width="400"/>
+<img src="https://drive.google.com/uc?export=view&id=1QBANonIPZEA9vC8cUE_nz2MbSYTaj9yy" width="400"/>
+
+
 
 ## **Demo**
 
